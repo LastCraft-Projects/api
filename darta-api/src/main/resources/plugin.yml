@@ -1,0 +1,7 @@
+name: DartaAPI
+version: 1.2
+author: IBROI
+
+main: net.lastcraft.dartaapi.loader.DartaAPI
+load: STARTUP
+depend: [ViaVersion, ProtocolLib, BukkitConnector]

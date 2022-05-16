@@ -1,0 +1,20 @@
+package net.lastcraft.api.event.player;
+
+import lombok.Getter;
+import net.lastcraft.api.event.DEvent;
+import org.bukkit.entity.Player;
+
+@Getter
+public abstract class PlayerEvent extends DEvent {
+
+    private final Player player;
+
+    protected PlayerEvent(Player player) {
+        this(player, false);
+    }
+
+    protected PlayerEvent(Player player, boolean async) {
+        super(async);
+        this.player = player;
+    }
+}
